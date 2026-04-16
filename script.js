@@ -20,6 +20,7 @@ async function handleSubmit(e) {
       body: JSON.stringify({
         _subject: `New app request from ${data.business || data.name}`,
         _template: 'table',
+        _autoresponse: `Hi ${data.name},\n\nThanks for reaching out to Diverse Apps and Solutions! We got your request for ${data.business} and we'll be in touch within 1 business day to discuss next steps.\n\nIn the meantime, if you have any questions, feel free to reply to this email or call us at (619) 353-4290.\n\nTalk soon,\nThe Diverse Apps and Solutions Team`,
         ...data
       })
     });
